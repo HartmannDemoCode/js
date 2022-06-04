@@ -1,0 +1,19 @@
+.CardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.Card {
+  background: white;
+  border: 1px solid black;
+  border-radius: .25rem;
+  padding: .5rem;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: 150ms;
+}
+.Card.Show {
+    transform: translateX(0);
+    opacity: 1;
+}
